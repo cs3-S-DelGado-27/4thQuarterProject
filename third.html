@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physical Oceanography </title>
+
+      <style>
+
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Times New Roman', serif;
+        }
+
+        html {
+        scroll-behavior: smooth;
+        }
+
+        body {
+        height: 100%;
+        margin: 0;
+        overflow-x: hidden;
+        margin-top: 100px;
+        }
+
+        body{
+          background-color: #73b6d1;
+        }
+
+        nav {
+        display: flex;
+        align-items: center;
+        height: 100px;
+        background: linear-gradient(to right, #135f92 30%, #528092 40%);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        border: 2px #1e7496 solid;
+        z-index: 1000;
+        }
+
+        .nav-buttons {
+        font-weight: bold;
+        display: flex;
+        }
+
+        .nav-buttons li {
+        list-style: none;
+        }
+
+        .nav-buttons a {
+        text-decoration: none;
+        color: #333;
+        margin: 10px 10px 20px 20px;
+        padding: 10px;
+        padding-right: 20px;
+        border-right: 2px solid #2935a4;
+        position: relative;
+        display: inline-block;
+        }
+
+        .nav-buttons a::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: #00719d;
+        transition: width 0.5s;
+        }
+
+        .nav-buttons a:hover {
+        color: #00719d;
+        transition: .5s;
+        }
+
+        .nav-buttons ul {
+        position: absolute;
+        background: #a6c8e5;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.3s, visibility 0.3s;
+        z-index: 1;
+        white-space: nowrap;
+        }
+
+        .nav-buttons li:hover ul {
+        background-color: rgb(192, 225, 255);
+        visibility: visible;
+        opacity: 1;
+        }
+
+        .nav-buttons li ul li:hover a {
+        background-color: rgb(114, 151, 189);
+        color: #fff;
+        transition: 0.5s ease-in-out;
+        }
+
+        .about p{
+          text-align: center;
+          font-size: 25px;
+          margin-top: 20px;
+        }
+
+        .about h1{
+          display: flex;
+          align-items: left;
+          font-size: 50px;
+          justify-content: left;
+        }
+
+        .container {
+          display: flex;
+          align-items: left;
+          justify-content: left;
+          margin-top: 100px;
+        }
+
+        img {
+          border-radius: 8px;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          padding: 5px;
+          width: 150px;
+        }
+
+        img {
+          width: 300px;
+          height: 300px;
+          border-radius: 10px;
+        }
+
+        .text {
+        font-size: 25px;
+        padding-left: 25px;
+        }
+
+        .pic {
+          display: flex;
+          align-items: left;
+          justify-content: left;
+          margin-top: 100px;
+        }
+
+        image {
+          border-radius: 8px;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          padding: 5px;
+          width: 150px;
+        }
+
+        image {
+          width: 300px;
+          height: 300px;
+          border-radius: 10px;
+        }
+
+        .info {
+        font-size: 25px;
+        padding-left: 25px;
+        }
+
+        .last {
+          display: flex;
+          align-items: left;
+          justify-content: left;
+          margin-top: 100px;
+          margin-bottom: 100px;
+        }
+
+        picture {
+          border-radius: 8px;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          padding: 5px;
+          width: 150px;
+        }
+
+        picture {
+          width: 300px;
+          height: 300px;
+          border-radius: 10px;
+        }
+
+        .facts{
+        font-size: 25px;
+        padding-left: 25px;
+        margin-bottom: 100px;
+        }
+        
+        footer {
+        background-color: #285177;
+        color: #fff;
+        padding: 20px;
+        }
+
+        .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+        
+        .ending img {
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+        }
+
+      
+      </style>
+
+  </head>
+  <body>
+  <nav id="navbar">
+      <div class="head">
+        <h3>   What To Know About The Ocean!  </h3>
+    </div>
+    <ul class="nav-buttons">
+      <li>
+      <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="second.html">Types of Oceanography &#9662;</a>
+        <ul>
+            <li><a href="third.html">Physical Oceanography</a></li>
+            <li><a href="fourth.html">Chemical Oceanography</a></li>
+            <li><a href="fifth.html">Biological Oceanography</a></li>
+            <li><a href="sixth.html">Geological Oceanography</a></li>
+          </ul>
+      </li>
+  </nav>
+
+
+  <div class="about" id="about">
+      <h1>What is Physical Oceanography?</h1>
+        <p>
+            Physical oceanography is a branch of oceanography that focuses on studying the physical properties and processes of the ocean. 
+            It involves the investigation of various aspects of the ocean's physical characteristics, such as temperature, salinity, density, currents, waves, tides, and circulation patterns. 
+            Physical oceanographers seek to understand the dynamics of the ocean, including how energy, heat, and mass are transferred within the ocean and between the ocean and the atmosphere.
+            It plays a crucial role in advancing our knowledge of ocean circulation, climate patterns, and the interactions between the ocean and the atmosphere. By studying the physical dynamics of the ocean, 
+            physical oceanographers contribute to our understanding of global climate systems, marine ecosystems, and the impact of human activities on the marine environment. Their research helps inform environmental policies, 
+            marine resource management, and efforts to address challenges such as sea level rise, ocean acidification, and extreme weather events.
+        </p>
+      </div>
+
+  <div class="container">
+    <div class="img">
+      <img src="physical.jpg">
+    </div>
+    <div class="text">
+      <p> Physical Oceanography have key aspects like : </p>
+      <p>A. Physical Setting. The oceans cover about 97% of the Earth's water and play a vital role in moderating the planet's climate through their heat capacity and absorption of gases.</p>
+      <p> B. Temperature, Salinity, and Density. Ocean waters vary in temperature, salinity, and density, creating different layers with distinct properties that influence ocean circulation.</p>
+      <p> C. Circulation. Ocean currents are driven by factors like solar radiation, wind stress, and gravitational energy. Processes like the Coriolis effect, Ekman transport, and Langmuir circulation affect ocean circulation patterns.</p>
+      <p>D. Heat Flux. The ocean absorbs and releases heat, influencing climate and sea level changes. Factors like heat storage and heat transfer through currents impact the Earth's energy balance.</p>
+      <p>E. Rapid Variations. Tides, tsunamis, and surface waves are dynamic phenomena in the ocean that result from gravitational forces, seismic activities, and wind interactions.</p>
+    </div>
+  </div>
+
+  <div class="pic">
+    <div class="image">
+      <img src="water.jpg">
+    </div>
+    <div class="info">
+      <p> Physical oceanography may be subdivided into descriptive and dynamical physical oceanography. Descriptive physical oceanography seeks to research the ocean through observations and complex numerical models, which describe the fluid motions as precisely as possible.
+        Dynamical physical oceanography focuses primarily upon the processes that govern the motion of fluids with emphasis upon theoretical research and numerical models. These are part of the large field of Geophysical Fluid Dynamics (GFD) that is shared together with meteorology. 
+        GFD is a sub field of Fluid dynamics describing flows occurring on spatial and temporal scales that are greatly influenced by the Coriolis force.</p>
+    </div>
+  </div>
+
+  <div class="last">
+    <div class="picture">
+      <img src="po.jpg">
+    </div>
+    <div class="facts">
+      <p>
+        Physical oceanography uses the laws of physics to study the structure and dynamics of ocean circulation and water properties, water mass formation, waves, tides, turbulence, and other physical phenomena. We study diverse systems such as hydrothermal vent plumes, estuaries, and 
+        the Gulf Stream and use a combination of traditional and novel observational techniques together with mathematical and computer modeling. A better understanding of the physics of the oceans is important for many interdisciplinary problems such as investigating the factors affecting 
+        the global carbon cycle, the ocean's ecosystems, the dynamics of fish populations, and larval transport. Physical Oceanology deals with the properties of seawater (temperature, density, pressure, and so on), its movement (waves, currents, and tides), and the interactions between the
+        ocean waters and the atmosphere.
+      </p>
+    </div>
+  </div>
+
+    <footer>
+      <div class="content">
+        <div class="contact">
+          <p>Ampayon, Butuan City, Agusan Del Norte, 8600</p>
+          <p>(63) 992 566 2503</p>
+          <p>sdelgado@crc.pshs.edu.ph</p>
+        </div>
+        <div class="ending">
+          <img src="save.jpg" alt="Save the Ocean">
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+    
+     
+      
+
+  
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+

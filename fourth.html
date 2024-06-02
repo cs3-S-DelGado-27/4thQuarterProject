@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemical Oceanography </title>
+
+      <style>
+
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Times New Roman', serif;
+        }
+
+        html {
+        scroll-behavior: smooth;
+        }
+
+        body {
+        height: 100%;
+        margin: 0;
+        overflow-x: hidden;
+        margin-top: 100px;
+        }
+
+        body{
+          background-color: #73b6d1;
+        }
+
+        nav {
+        display: flex;
+        align-items: center;
+        height: 100px;
+        background: linear-gradient(to right, #135f92 30%, #528092 40%);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        border: 2px #1e7496 solid;
+        z-index: 1000;
+        }
+
+        .nav-buttons {
+        font-weight: bold;
+        display: flex;
+        }
+
+        .nav-buttons li {
+        list-style: none;
+        }
+
+        .nav-buttons a {
+        text-decoration: none;
+        color: #333;
+        margin: 10px 10px 20px 20px;
+        padding: 10px;
+        padding-right: 20px;
+        border-right: 2px solid #2935a4;
+        position: relative;
+        display: inline-block;
+        }
+
+        .nav-buttons a::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: #00719d;
+        transition: width 0.5s;
+        }
+
+        .nav-buttons a:hover {
+        color: #00719d;
+        transition: .5s;
+        }
+
+        .nav-buttons ul {
+        position: absolute;
+        background: #a6c8e5;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.3s, visibility 0.3s;
+        z-index: 1;
+        white-space: nowrap;
+        }
+
+        .nav-buttons li:hover ul {
+        background-color: rgb(192, 225, 255);
+        visibility: visible;
+        opacity: 1;
+        }
+
+        .nav-buttons li ul li:hover a {
+        background-color: rgb(114, 151, 189);
+        color: #fff;
+        transition: 0.5s ease-in-out;
+        }
+
+        .about p{
+          text-align: center;
+          font-size: 25px;
+          margin-top: 20px;
+        }
+
+        .about h1{
+          display: flex;
+          align-items: right;
+          font-size: 50px;
+          justify-content: right;
+        }
+
+        .container {
+          display: flex;
+          align-items: right;
+          justify-content: right;
+          margin-top: 100px;
+        }
+
+        img {
+          border-radius: 8px;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          padding: 5px;
+          width: 150px;
+          float: right;
+        }
+
+        img {
+          width: 300px;
+          height: 300px;
+          border-radius: 10px;
+        }
+
+        .text {
+        font-size: 25px;
+        padding-left: 25px;
+        }
+
+        .pic {
+          display: flex;
+          align-items: right;
+          justify-content: right;
+          margin-top: 100px;
+        }
+
+        image {
+          border-radius: 8px;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          padding: 5px;
+          float: right;
+        }
+
+        image {
+          width: 300px;
+          height: 300px;
+          border-radius: 10px;
+        }
+
+        .info {
+        font-size: 25px;
+        padding-left: 25px;
+        }
+
+        .last {
+          display: flex;
+          align-items: right;
+          justify-content: right;
+          margin-top: 100px;
+          margin-bottom: 100px;
+        }
+
+        picture {
+          border-radius: 8px;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          padding: 5px;
+          width: 150px;
+          object-position: right;
+        }
+
+        picture {
+          width: 300px;
+          height: 300px;
+          border-radius: 10px;
+        }
+
+        .facts{
+        font-size: 25px;
+        padding-left: 25px;
+        margin-bottom: 100px;
+        }
+        
+        footer {
+        background-color: #285177;
+        color: #fff;
+        padding: 20px;
+        }
+
+        .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+        
+        .ending img {
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+        }
+
+      
+      </style>
+
+  </head>
+  <body>
+  <nav id="navbar">
+      <div class="head">
+        <h3>   What To Know About The Ocean!  </h3>
+    </div>
+    <ul class="nav-buttons">
+      <li>
+      <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="second.html">Types of Oceanography &#9662;</a>
+        <ul>
+            <li><a href="third.html">Physical Oceanography</a></li>
+            <li><a href="fourth.html">Chemical Oceanography</a></li>
+            <li><a href="fifth.html">Biological Oceanography</a></li>
+            <li><a href="sixth.html">Geological Oceanography</a></li>
+          </ul>
+      </li>
+  </nav>
+
+
+  <div class="about" id="about">
+      <h1>What is Chemical Oceanography?</h1>
+        <p>
+            Chemical oceanography is a branch of oceanography that focuses on the chemical composition and processes occurring in the oceans. It involves the study of the chemical properties of seawater, 
+            the distribution of chemical elements and compounds in the ocean, and the chemical reactions that take place in the marine environment.
+        </p>
+      </div>
+
+  <div class="container">
+    <div class="img">
+      <img src="chemical.jpg">
+    </div>
+    <div class="text">
+      <p> Here are some key aspects of Chemical Oceanology : </p>
+      <p>A. Seawater Composition: Seawater is a complex mixture of dissolved inorganic and organic substances. The major components of seawater include salts (such as sodium chloride), dissolved gases (like oxygen and carbon dioxide), nutrients (nitrogen, phosphorus), and trace elements (iron, zinc). </p> 
+      <p>B. Biogeochemical Cycles: Chemical oceanographers study biogeochemical cycles, such as the carbon cycle, nitrogen cycle, and sulfur cycle, which involve the movement of elements and compounds between living organisms, the atmosphere, and the ocean. </p> 
+      <p>c. Ocean Acidification: One important area of study in chemical oceanography is ocean acidification, which is the ongoing decrease in the pH of the Earth's oceans caused by the uptake of carbon dioxide from the atmosphere. This phenomenon has significant implications for marine life and ecosystems.</p> 
+      <p>D. Nutrient Cycling: Chemical oceanographers investigate the cycling of nutrients in the ocean, which are essential for the growth of marine organisms. Nutrients like nitrogen and phosphorus play a crucial role in supporting marine food webs.</p> 
+      <p>E. Pollution and Contaminants: Chemical oceanography also involves the study of pollutants and contaminants in the ocean, such as heavy metals, pesticides, and plastics. Understanding the sources and effects of these pollutants is essential for marine conservation and ecosystem health.</p> 
+      <p>F. Climate Change: The field of chemical oceanography is closely linked to the study of climate change, as changes in ocean chemistry can have profound effects on global climate patterns and marine ecosystems.</p>
+    </div>
+  </div>
+
+  <div class="pic">
+    <div class="image">
+      <img src="chem.jpg">
+    </div>
+    <div class="info">
+      <p> Chemical oceanography, also known as marine chemistry or ocean chemistry, is a field that studies the chemical components of the seas, their reactions, and the pathways of change that these components follow. It involves the study of the interactions of various chemical compounds, ions, gases, and 
+        molecules in ocean water with marine organisms, oceanographic processes, and the saltwater itself. Chemical oceanography encompasses the study of particles, dissolved matter, and ocean sediments, including both organic and inorganic components. This field examines the pathways of compounds that significantly 
+        impact global element cycles like carbon and nitrogen. It focuses on quantifying the ocean's rate of carbon dioxide uptake and the biological pump responsible for transferring carbon dioxide from the surface ocean to deep waters and sediments. The field also investigates the pathways of anthropogenic emissions 
+        through the oceans, such as bomb fallout tritium, carbon-14, plutonium, and organic pollutants, to assess the anthropogenic footprint on the ocean. </p>
+    </div>
+  </div>
+
+  <div class="last">
+    <div class="picture">
+      <img src="co.jpg">
+    </div>
+    <div class="facts">
+      <p>
+        Chemical oceanographers study seawater composition, processes, and interactions between seawater, the atmosphere, and the seafloor. They also investigate pollution effects, chemical processes on marine animals, and the carbon cycle, which plays a crucial role in Earth's climate system. Additionally, they focus on 
+        paleoclimatology, rivers and estuaries geochemistry, biogeochemistry, and sediment geochemistry to understand past climate changes, the impact of human activities on ocean chemistry, and the implications of ocean acidification and deoxygenation on marine ecosystems and global climate. Chemical oceanography is an 
+        interdisciplinary field that combines chemistry, biology, geology, and atmospheric science to study the oceans' chemical dynamics and their role in the Earth's system.  Chemical oceanographers study the organic and inorganic chemistry of seawater and marine sediments, recognizing the interconnectedness of processes 
+        on land and in the Earth's crust beneath the ocean. They utilize a wide array of state-of-the-art analytical instruments and techniques, including sediment traps, in situ pumps, and mass spectrometry, to conduct their research. By exploring the chemistry of marine environments, chemical oceanography contributes valuable
+         insights into the health of marine ecosystems, the global carbon cycle, and the effects of climate change on the oceans.
+
+      </p>
+    </div>
+  </div>
+
+    <footer>
+      <div class="content">
+        <div class="contact">
+          <p>Ampayon, Butuan City, Agusan Del Norte, 8600</p>
+          <p>(63) 992 566 2503</p>
+          <p>sdelgado@crc.pshs.edu.ph</p>
+        </div>
+        <div class="ending">
+          <img src="save.jpg" alt="Save the Ocean">
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+    
+     
+      
+
+  
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+

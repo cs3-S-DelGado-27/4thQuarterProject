@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geological Oceanography </title>
+
+      <style>
+
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Times New Roman', serif;
+        }
+
+        html {
+        scroll-behavior: smooth;
+        }
+
+        body {
+        height: 100%;
+        margin: 0;
+        overflow-x: hidden;
+        margin-top: 100px;
+        }
+
+        body{
+          background-color: #73b6d1;
+        }
+
+        nav {
+        display: flex;
+        align-items: center;
+        height: 100px;
+        background: linear-gradient(to right, #135f92 30%, #528092 40%);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        border: 2px #1e7496 solid;
+        z-index: 1000;
+        }
+
+        .nav-buttons {
+        font-weight: bold;
+        display: flex;
+        }
+
+        .nav-buttons li {
+        list-style: none;
+        }
+
+        .nav-buttons a {
+        text-decoration: none;
+        color: #333;
+        margin: 10px 10px 20px 20px;
+        padding: 10px;
+        padding-right: 20px;
+        border-right: 2px solid #2935a4;
+        position: relative;
+        display: inline-block;
+        }
+
+        .nav-buttons a::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: #00719d;
+        transition: width 0.5s;
+        }
+
+        .nav-buttons a:hover {
+        color: #00719d;
+        transition: .5s;
+        }
+
+        .nav-buttons ul {
+        position: absolute;
+        background: #a6c8e5;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.3s, visibility 0.3s;
+        z-index: 1;
+        white-space: nowrap;
+        }
+
+        .nav-buttons li:hover ul {
+        background-color: rgb(192, 225, 255);
+        visibility: visible;
+        opacity: 1;
+        }
+
+        .nav-buttons li ul li:hover a {
+        background-color: rgb(114, 151, 189);
+        color: #fff;
+        transition: 0.5s ease-in-out;
+        }
+
+        .about p{
+          text-align: center;
+          font-size: 25px;
+          margin-top: 20px;
+        }
+
+        .about h1{
+          display: flex;
+          align-items: center;
+          font-size: 50px;
+          justify-content: center;
+        }
+
+        .container {
+          display: flex;
+          align-items: right;
+          justify-content: right;
+          margin-top: 100px;
+        }
+
+        img {
+          border-radius: 8px;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          padding: 5px;
+          width: 150px;
+          float: right;
+        }
+
+        img {
+          width: 300px;
+          height: 300px;
+          border-radius: 10px;
+        }
+
+        .text {
+        font-size: 25px;
+        padding-left: 25px;
+        }
+
+        .pic {
+          display: flex;
+          align-items: right;
+          justify-content: right;
+          margin-top: 100px;
+        }
+
+        image {
+          border-radius: 8px;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          padding: 5px;
+          float: right;
+        }
+
+        image {
+          width: 300px;
+          height: 300px;
+          border-radius: 10px;
+        }
+
+        .info {
+        font-size: 25px;
+        padding-left: 25px;
+        }
+
+        .last {
+          display: flex;
+          align-items: right;
+          justify-content: right;
+          margin-top: 100px;
+          margin-bottom: 100px;
+        }
+
+        picture {
+          border-radius: 8px;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          padding: 5px;
+          width: 150px;
+          object-position: right;
+        }
+
+        picture {
+          width: 300px;
+          height: 300px;
+          border-radius: 10px;
+        }
+
+        .facts{
+        font-size: 25px;
+        padding-left: 25px;
+        margin-bottom: 100px;
+        }
+        
+        footer {
+        background-color: #285177;
+        color: #fff;
+        padding: 20px;
+        }
+
+        .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+        
+        .ending img {
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+        }
+      
+      </style>
+
+  </head>
+  <body>
+  <nav id="navbar">
+      <div class="head">
+        <h3>   What To Know About The Ocean!  </h3>
+    </div>
+    <ul class="nav-buttons">
+      <li>
+      <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="second.html">Types of Oceanography &#9662;</a>
+        <ul>
+            <li><a href="third.html">Physical Oceanography</a></li>
+            <li><a href="fourth.html">Chemical Oceanography</a></li>
+            <li><a href="fifth.html">Biological Oceanography</a></li>
+            <li><a href="sixth.html">Geological Oceanography</a></li>
+          </ul>
+      </li>
+  </nav>
+
+
+  <div class="about" id="about">
+      <h1>What is Geological Oceanography?</h1>
+        <p>
+            Geological oceanology, often known as marine geology or oceanic geology, is a scientific subject that studies the planet's oceans and seas from a geological standpoint. It is the study of the geological processes, structures, and characteristics that shape the ocean floor 
+            and its surroundings. Geological oceanologists investigate the composition, structure, and history of the oceanic crust, as well as the sediments, rocks, and minerals found in marine environments.
+        </p>
+      </div>
+
+  <div class="container">
+    <div class="img">
+      <img src="geo.jpg">
+    </div>
+    <div class="text">
+        <p> Important areas of interest in geological oceanology include: </p>
+      <p>A. Seafloor Spreading and Plate Tectonics: Geological oceanologists study the movement of the Earth's tectonic plates and the processes of seafloor spreading, subduction, and plate boundaries in the oceanic regions.
+      <p>B: Marine Sediments: They analyze the distribution, composition, and origin of sediments on the ocean floor to understand past oceanic conditions, climate changes, and geological events. </p>
+      <p>C: Underwater Volcanism and Hydrothermal Vent Systems: Researchers investigate volcanic activity, underwater volcanoes, and hydrothermal vent systems that contribute to the formation of mineral deposits and unique ecosystems in the deep sea.</p>
+      <p>D: Oceanic Crust and Mantle: Geological oceanologists explore the structure and composition of the oceanic crust, including the formation of mid-ocean ridges, ocean basins, and the interaction between the crust and the Earth's mantle. </p>
+      <p>E: Paleoceanography: By studying ancient oceanic environments through sediment cores and fossils, researchers reconstruct past oceanic conditions, climate variations, and the evolution of marine life.</p>
+    </div>
+  </div>
+
+
+  <div class="pic">
+    <div class="image">
+      <img src="geological.jpg">
+    </div>
+    <div class="info">
+      <p> Geological oceanology plays a crucial role in understanding the Earth's history, geodynamic processes, and the interactions between the oceans and the solid Earth. It provides valuable insights into the evolution of ocean basins, the formation of 
+        mineral resources, and the impact of geological phenomena on marine ecosystems. This field encompasses the investigation of the composition, structure, and history of the oceanic crust, as well as the physical and chemical processes that occur beneath 
+        the ocean floor. Geological oceanographers use a variety of tools and techniques in their research, including seismic reflection and refraction, sediment core sampling, deep-sea drilling, and remote sensing technologies. Their work is essential for understanding 
+        the geological history of our planet, the dynamics of Earth's interior, and the natural resources and hazards associated with the ocean floor.
+      </p>
+    </div>
+  </div>
+
+  <div class="last">
+    <div class="picture">
+      <img src="go.jpg">
+    </div>
+    <div class="facts">
+      <p> Geological oceanography, often known as marine geology, studies the structure, composition, and processes that occur on the ocean floor. This field focuses on plate tectonics, mapping underwater features such as mid-ocean ridges and trenches, and understanding
+         seafloor spread. It also delves into marine sedimentology, examining sediment kinds, distribution, and sources. Submarine volcanism and hydrothermal vent systems are important regions for understanding unique undersea geological and chemical processes. Paleoceanography 
+         reconstructs historical ocean conditions and climates using sediment cores and fossil data. Geological oceanographers investigate these characteristics using technologies such as seismic surveys, sediment sampling, and remote sensing, which provide insights into the Earth's
+          geological past and marine resources.
+      </p>
+    </div>
+  </div>
+
+    <footer>
+      <div class="content">
+        <div class="contact">
+          <p>Ampayon, Butuan City, Agusan Del Norte, 8600</p>
+          <p>(63) 992 566 2503</p>
+          <p>sdelgado@crc.pshs.edu.ph</p>
+        </div>
+        <div class="ending">
+          <img src="save.jpg" alt="Save the Ocean">
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+    
+     
+      
+
+  
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+

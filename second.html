@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AA </title>
+
+      <style>
+
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Times New Roman', serif;
+        }
+
+        html {
+        scroll-behavior: smooth;
+        }
+
+        body {
+        height: 100%;
+        margin: 0;
+        overflow-x: hidden;
+        margin-top: 100px;
+        }
+
+        body{
+          background-color: #73b6d1;
+        }
+
+        nav {
+        display: flex;
+        align-items: center;
+        height: 100px;
+        background: linear-gradient(to right, #135f92 30%, #528092 40%);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        border: 2px #1e7496 solid;
+        z-index: 1000;
+        }
+
+        .nav-buttons {
+        font-weight: bold;
+        display: flex;
+        }
+
+        .nav-buttons li {
+        list-style: none;
+        }
+
+        .nav-buttons a {
+        text-decoration: none;
+        color: #333;
+        margin: 10px 10px 20px 20px;
+        padding: 10px;
+        padding-right: 20px;
+        border-right: 2px solid #2935a4;
+        position: relative;
+        display: inline-block;
+        }
+
+        .nav-buttons a::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: #00719d;
+        transition: width 0.5s;
+        }
+
+        .nav-buttons a:hover {
+        color: #00719d;
+        transition: .5s;
+        }
+
+        .nav-buttons ul {
+        position: absolute;
+        background: #a6c8e5;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.3s, visibility 0.3s;
+        z-index: 1;
+        white-space: nowrap;
+        }
+
+        .nav-buttons li:hover ul {
+        background-color: rgb(192, 225, 255);
+        visibility: visible;
+        opacity: 1;
+        }
+
+        .nav-buttons li ul li:hover a {
+        background-color: rgb(114, 151, 189);
+        color: #fff;
+        transition: 0.5s ease-in-out;
+        }
+
+        .about p{
+          text-align: center;
+          font-size: 25px;
+          margin-top: 20px;
+        }
+
+        .about h1{
+          display: flex;
+          align-items: center;
+          font-size: 50px;
+          justify-content: center;
+        }
+
+        .container {
+          display: flex;
+          align-items: left;
+          justify-content: left;
+          margin-top: 100px;
+        }
+
+        img {
+          border-radius: 8px;
+          border-radius: 4px;
+          padding: 5px;
+          width: 150px;
+        }
+
+        img {
+          width: 300px;
+          height: 300px;
+        }
+
+        .text {
+        font-size: 25px;
+        padding-left: 25px;
+        }
+
+        .pic {
+          display: flex;
+          align-items: left;
+          justify-content: left;
+          margin-top: 100px;
+        }
+
+        image {
+          border-radius: 8px;
+          border-radius: 4px;
+          padding: 5px;
+          width: 150px;
+        }
+
+        image {
+          width: 300px;
+          height: 300px;
+        }
+
+        .info {
+        font-size: 25px;
+        padding-left: 25px;
+        }
+
+        .last {
+          display: flex;
+          align-items: left;
+          justify-content: left;
+          margin-top: 100px;
+        }
+
+        picture {
+          border-radius: 8px;
+          border-radius: 4px;
+          padding: 5px;
+          width: 150px;
+        }
+
+        picture {
+          width: 300px;
+          height: 300px;
+        }
+
+        .facts{
+        font-size: 25px;
+        padding-left: 25px;
+        margin-bottom: 100px;
+        }
+
+        .famous h1{
+          margin-top: 500px;
+          display: flex;
+          align-items: center;
+          font-size: 50px;
+          justify-content: center;
+        }
+
+        .famous::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .oceanographers{
+            float: left;
+            width: 300px;
+            margin-bottom: 150px;
+            margin-top: 50px;
+            margin-right: 100px;
+            margin-left: 200px;
+        }
+
+        .caption {
+            display: block;
+        }
+      
+        footer {
+        background-color: #285177;
+        color: #fff;
+        padding: 20px;
+        }
+
+        .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+        
+        .ending img {
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+        }
+
+      
+      </style>
+
+  </head>
+  <body>
+  <nav id="navbar">
+      <div class="head">
+        <h3>   What To Know About The Ocean!  </h3>
+    </div>
+    <ul class="nav-buttons">
+      <li>
+      <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="second.html">Types of Oceanography &#9662;</a>
+        <ul>
+            <li><a href="third.html">Physical Oceanography</a></li>
+            <li><a href="fourth.html">Chemical Oceanography</a></li>
+            <li><a href="fifth.html">Biological Oceanography</a></li>
+            <li><a href="sixth.html">Geological Oceanography</a></li>
+          </ul>
+      </li>
+  </nav>
+
+
+  <div class="about" id="about">
+      <h1>OCEANOGRAPHY</h1>
+        <p>
+            Oceanography applies chemistry, geology, meteorology, biology, and other branches of science to the study of the ocean. It is especially important
+            today as climate change, pollution, and other factors are threatening the ocean and its marine life.
+        </p>
+      </div>
+
+  <div class="container">
+    <div class="img">
+      <img src="oceanology.jpg">
+    </div>
+    <div class="text">
+      <p> It encompasses various disciplines, including marine biology, geology, and meteorology, to understand the complex interactions within the marine environment. 
+        Oceanographers study ocean currents, marine life, coastal erosion, and the impact of human activities on the ocean. They also research climate patterns, sea levels, and the role of the ocean in regulating Earth's climate. 
+        Overall, oceanography plays a crucial role in advancing our knowledge of the oceans and their importance in sustaining life on Earth.
+        The ocean is home to the largest animal on Earth, the blue whale, which can grow up to 100 feet (30 meters) long.</p>
+    </div>
+  </div>
+
+  <div class="pic">
+    <div class="image">
+      <img src="marine.jpg">
+    </div>
+    <div class="info">
+      <p> This field plays a crucial role in studying the history of the oceans, their current conditions, and their impact on global climate and ecosystems. 
+        Oceanology institutions and research centers worldwide focus on exploring and preserving the marine environment for sustainable utilization of Earth's resources.
+        Oceanographers are scientists who study various aspects of the ocean, including its physical, chemical, biological, and geological properties. 
+        They conduct research to understand ocean processes, marine life, ocean currents, climate patterns, and the impact of human activities on the marine environment. 
+        Oceanographers utilize a range of tools and technologies, such as research vessels, underwater robots, buoys, and satellites, to collect data and monitor ocean conditions. 
+        They work in interdisciplinary teams, collaborating with experts in marine biology, chemistry, geology, and physics to advance our knowledge of the oceans and their role in the Earth's ecosystem. 
+        Oceanographers play a vital role in addressing environmental challenges, promoting ocean conservation, and contributing to sustainable ocean management practices.</p>
+    </div>
+  </div>
+
+  <div class="last">
+    <div class="picture">
+      <img src="ocean.jpg">
+    </div>
+    <div class="facts">
+      <p>
+        Oceanographers use a variety of tools and technologies, such as research vessels, satellites, buoys, and underwater robots, to collect data and conduct research in different oceanic environments.
+        Oceanography involves the exploration and understanding of ocean currents, marine life, marine ecosystems, ocean circulation, and the interactions between the ocean and the atmosphere. 
+        The study of oceanology is crucial for advancing our knowledge of the oceans and their role in regulating Earth's climate, supporting marine life, and influencing global weather patterns. 
+        Oceanographers play a vital role in addressing environmental challenges, such as ocean pollution, climate change, and overfishing, and in promoting sustainable ocean management practices.
+        In general, it is a dynamic and evolving field that continues to contribute to our understanding of the oceans and their significance in maintaining the health of our planet. 
+        Through ongoing research and exploration, oceanographers strive to unravel the complexities of the marine environment and enhance conservation efforts to protect the world's oceans for future generations.
+      </p>
+    </div>
+  </div>
+
+  <div class="famous" id="famous">
+    <h1>WELL - KNOWN OCEANOGRAPHERS</h1>
+      <div class="oceanographers">
+        <img src="jacques.jpg" style="width:100%">
+        <span class="caption">Jacques Cousteau</span>
+      </div>
+      <div class="oceanographers">
+        <img src="earle.png" style="width:100%">
+        <span class="caption">Sylvia Earle</span>
+      </div>
+      <div class="oceanographers">
+        <img src="walter.jpg" style="width:100%">
+        <span class="caption">Walter Munk</span>
+      </div>
+      <div class="oceanographers">
+        <img src="philippe.jpg" style="width:100%">
+        <span class="caption">Philippe Cousteau Jr.</span>
+      </div>
+      <div class="oceanographers">
+        <img src="matthew.jpg" style="width:100%">
+        <span class="caption">Matthew Fontaine Maury</span>
+      </div>
+      <div class="oceanographers">
+        <img src="sullivan.jpg" style="width:100%">
+        <span class="caption">Kathryn D. Sullivan</span>
+      </div>
+    </div>
+
+
+    <footer>
+      <div class="content">
+        <div class="contact">
+          <p>Ampayon, Butuan City, Agusan Del Norte, 8600</p>
+          <p>(63) 992 566 2503</p>
+          <p>sdelgado@crc.pshs.edu.ph</p>
+        </div>
+        <div class="ending">
+          <img src="save.jpg" alt="Save the Ocean">
+        </div>
+      </div>
+    </footer>
+
+
+
+  </body>
+</html>
+    
+     
+      
+
+  
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+

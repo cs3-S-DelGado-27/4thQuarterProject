@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <title> Sign Up </title>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale-1.0">
+        
+        <style>
+            body {
+                background-image: url("raptivitytools tools.jpg");
+                }
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                font-family:'Times New Roman', serif;
+            }
+            .content{
+                text-align: center;
+            }
+            .content h1{
+                font-size: 95px;
+                color: #869ee2;
+                margin-bottom: 50px;
+            }
+            .sign{
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+            }
+            .button{
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                height: 40vh;
+            }
+            .button a{
+                font-size: 20px;
+                color: #698ab4;
+                text-decoration: none;
+                border: 2px solid #4060b8;
+                padding: 5px 10px;
+                border-radius: 45px;
+                transition: 0.2s;
+            }
+            .button a:hover{
+                background-color:rgb(58, 89, 190);
+                color: #fff;
+            }
+            label{
+                font-family:   Georgia, 'Times New Roman', Times, serif;
+            }
+            .red-border {
+                border: 2px solid rgb(190, 73, 73);
+                }  
+            .green-border {
+                border: 2px solid rgb(24, 92, 24);
+                }
+
+	</style>
+        
+        <body>
+            <div class="content">
+                <h1>Sign In</h1>
+            </div>
+
+        <div class="sign">
+            <label for="username"> username :</label>
+            <input type="text" id="username" onblur="validateInput(this)" onfocus="resetBorder(this)" name="username"><br><br>
+           
+            <label for="email">email:</label>
+            <input type="email" id="email" onblur="validateInput(this)" onfocus="validateInput(this)"> <br><br>
+                
+            <label for="password"> password : </label>
+            <input type="password" id="password" onblur="validateInput(this)" onfocus="resetBorder(this)" name="password"><br><br>
+
+           
+        </div>
+
+        <div class="button">
+            <a href="second.html">Submit</a>
+        </div>
+        </body>
+
+     <script>
+        function validateInput(inputElement) {
+        if (inputElement.value.trim() === '') {
+            inputElement.classList.add('red-border');
+        } else {
+            inputElement.classList.remove('red-border');
+            inputElement.classList.add('green-border');
+        }
+      }
+
+        function resetForm() {
+        var inputs = document.getElementsByTagName('input');
+        for (var i = 0; i < inputs.length; i++) {
+            inputs[i].value = '';
+            inputs[i].classList.remove('red-border');
+            inputs[i].classList.remove('green-border');
+        }
+
+        var textarea = document.getElementById('usinterests');
+        textarea.value = '';
+        textarea.classList.remove('red-border');
+        textarea.classList.remove('green-border');
+      }
+ 
+      function signUp() {
+        var username = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        
+        localStorage.setItem("name", username);
+        localStorage.setItem("email", email);
+        localStorage.setItem("password", password);
+
+      function signIn() {
+        var username = document.getElementById("name").value;
+        var password = document.getElementById("password").value;
+        
+        alert('Welcome ' + username);
+        }
+    }
+
+     </script>
+
+    </head>
+</html>

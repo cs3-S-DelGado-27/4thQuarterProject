@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biological Oceanography </title>
+
+      <style>
+
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Times New Roman', serif;
+        }
+
+        html {
+        scroll-behavior: smooth;
+        }
+
+        body {
+        height: 100%;
+        margin: 0;
+        overflow-x: hidden;
+        margin-top: 100px;
+        }
+
+        body{
+          background-color: #73b6d1;
+        }
+
+        nav {
+        display: flex;
+        align-items: center;
+        height: 100px;
+        background: linear-gradient(to right, #135f92 30%, #528092 40%);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        border: 2px #1e7496 solid;
+        z-index: 1000;
+        }
+
+        .nav-buttons {
+        font-weight: bold;
+        display: flex;
+        }
+
+        .nav-buttons li {
+        list-style: none;
+        }
+
+        .nav-buttons a {
+        text-decoration: none;
+        color: #333;
+        margin: 10px 10px 20px 20px;
+        padding: 10px;
+        padding-right: 20px;
+        border-right: 2px solid #2935a4;
+        position: relative;
+        display: inline-block;
+        }
+
+        .nav-buttons a::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: #00719d;
+        transition: width 0.5s;
+        }
+
+        .nav-buttons a:hover {
+        color: #00719d;
+        transition: .5s;
+        }
+
+        .nav-buttons ul {
+        position: absolute;
+        background: #a6c8e5;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.3s, visibility 0.3s;
+        z-index: 1;
+        white-space: nowrap;
+        }
+
+        .nav-buttons li:hover ul {
+        background-color: rgb(192, 225, 255);
+        visibility: visible;
+        opacity: 1;
+        }
+
+        .nav-buttons li ul li:hover a {
+        background-color: rgb(114, 151, 189);
+        color: #fff;
+        transition: 0.5s ease-in-out;
+        }
+
+        .about p{
+          text-align: center;
+          font-size: 25px;
+          margin-top: 20px;
+        }
+
+        .about h1{
+          display: flex;
+          align-items: center;
+          font-size: 50px;
+          justify-content: center;
+        }
+
+        .container {
+          display: flex;
+          align-items: right;
+          justify-content: right;
+          margin-top: 100px;
+        }
+
+        img {
+          border-radius: 8px;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          padding: 5px;
+          width: 150px;
+          float: right;
+        }
+
+        img {
+          width: 300px;
+          height: 300px;
+          border-radius: 10px;
+        }
+
+        .text {
+        font-size: 25px;
+        padding-left: 25px;
+        }
+
+        .pic {
+          display: flex;
+          align-items: right;
+          justify-content: right;
+          margin-top: 100px;
+        }
+
+        image {
+          border-radius: 8px;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          padding: 5px;
+          float: right;
+        }
+
+        image {
+          width: 300px;
+          height: 300px;
+          border-radius: 10px;
+        }
+
+        .info {
+        font-size: 25px;
+        padding-left: 25px;
+        }
+
+        .last {
+          display: flex;
+          align-items: right;
+          justify-content: right;
+          margin-top: 100px;
+          margin-bottom: 100px;
+        }
+
+        picture {
+          border-radius: 8px;
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          padding: 5px;
+          width: 150px;
+          object-position: right;
+        }
+
+        picture {
+          width: 300px;
+          height: 300px;
+          border-radius: 10px;
+        }
+
+        .facts{
+        font-size: 25px;
+        padding-left: 25px;
+        margin-bottom: 100px;
+        }
+        
+        footer {
+        background-color: #285177;
+        color: #fff;
+        padding: 20px;
+        }
+
+        .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+        
+        .ending img {
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+        }
+      
+      </style>
+
+  </head>
+  <body>
+  <nav id="navbar">
+      <div class="head">
+        <h3>   What To Know About The Ocean!  </h3>
+    </div>
+    <ul class="nav-buttons">
+      <li>
+      <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="second.html">Types of Oceanography &#9662;</a>
+        <ul>
+            <li><a href="third.html">Physical Oceanography</a></li>
+            <li><a href="fourth.html">Chemical Oceanography</a></li>
+            <li><a href="fifth.html">Biological Oceanography</a></li>
+            <li><a href="sixth.html">Geological Oceanography</a></li>
+          </ul>
+      </li>
+  </nav>
+
+
+  <div class="about" id="about">
+      <h1>What is Biological Oceanography?</h1>
+        <p>
+            Biological oceanography, also known as ocean ecology, is the study of how organisms in the ocean interact with and are influenced by the physical, chemical, and geological aspects of the marine environment. It focuses on microorganisms within the ocean, examining how they are impacted by their 
+            surroundings and how these interactions affect larger marine organisms and the overall ecosystem. This field encompasses the study of various forms of marine life, from microscopic plankton to large marine mammals, and how these organisms are influenced by physical, chemical, and geological aspects of the ocean.
+      </div>
+
+  <div class="container">
+    <div class="img">
+      <img src="bio.jpg">
+    </div>
+    <div class="text">
+        <p> Biological oceanography focuses on key areas such as:    </p>
+      <p>A. Marine Ecosystems: Understanding the structure and function of marine ecosystems, including coral reefs, deep-sea vents, and open ocean environments.</p>
+      <p>B. Plankton Ecology: Studying the role of plankton in the ocean's food web, their distribution, abundance, and productivity.</p>
+      <p>C. Marine Population Dynamics: Investigating the population structures, reproductive patterns, and life cycles of marine species.</p>
+      <p>D. Marine Biogeochemistry: Exploring how marine organisms influence and are influenced by chemical cycles in the ocean, including carbon, nitrogen, and phosphorus cycles.</p> 
+      <p>E. Ecophysiology: Examining how marine organisms adapt to and survive in various oceanic conditions, such as changes in temperature, salinity, and pressure. </p>
+      <p>F. Marine Conservation: Focusing on the protection and preservation of marine species and habitats, addressing issues like overfishing, habitat destruction, and the impacts of climate change.</p>
+      <p>G. Behavioral Ecology &  Microbial Oceanography: Studying the behavior of marine organisms, including their feeding, mating, and migratory patterns. Also nvestigates the roles and functions of marine microorganisms in the ocean, including bacteria, viruses, and fungi.</p>
+    </div>
+  </div>
+
+
+  <div class="pic">
+    <div class="image">
+      <img src="logical.jpg">
+    </div>
+    <div class="info">
+      <p> Biological oceanographers use a variety of tools and techniques in their research, including field observations, laboratory experiments, satellite remote sensing, and computer modeling. Their work is crucial for understanding the health and sustainability of marine ecosystems, 
+        which are vital for global biodiversity, climate regulation, and human livelihoods. Biological oceanography differs from marine biology in its approach, taking a bottom-up perspective on the food web compared to the top-down view of marine biology.
+        Historically, the exploration of the ocean and its life forms has been a significant endeavor. Notable events include Pytheas of Massalia's exploration in 325 BC, Prince Henry the Navigator's ocean expeditions in the 1400s, and the Challenger expedition led by Charles Wyville Thomson in 1872 to 1876. 
+        The Challenger expedition was pivotal in reshaping the understanding of the ocean as a diverse and life-filled ecosystem.
+      </p>
+    </div>
+  </div>
+
+  <div class="last">
+    <div class="picture">
+      <img src="bo.jpg">
+    </div>
+    <div class="facts">
+      <p> Biological oceanography plays a crucial role in understanding the marine environment, which covers a vast portion of the Earth's surface. The ocean's immense volume, unique organisms, and different timescales compared to land and the atmosphere make it a fascinating field of study. Researchers in biological
+         oceanography investigate a wide range of topics, including the diversity of ocean life, productivity, carbon cycling, distribution patterns, and the impacts of climate change on marine ecosystems. Biological oceanographers study various aspects, such as the chemical and physical factors influencing distribution
+          patterns, adaptations of organisms to environmental variables, food chain dynamics, nutrient cycling, and responses to human activities in the oceans. The field employs a diverse set of research tools and techniques, including molecular biology, bioacoustics, and mathematical modeling, to explore the interactions 
+          between organisms and their environment.
+      </p>
+    </div>
+  </div>
+
+    <footer>
+      <div class="content">
+        <div class="contact">
+          <p>Ampayon, Butuan City, Agusan Del Norte, 8600</p>
+          <p>(63) 992 566 2503</p>
+          <p>sdelgado@crc.pshs.edu.ph</p>
+        </div>
+        <div class="ending">
+          <img src="save.jpg" alt="Save the Ocean">
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+    
+     
+      
+
+  
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
